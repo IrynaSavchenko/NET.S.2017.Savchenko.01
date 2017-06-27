@@ -97,7 +97,7 @@ namespace SortLogic
         /// <param name="array">Array to sort</param>
         /// <param name="leftIndex">Start index of the array</param>
         /// <param name="rightIndex">End index of the array</param>
-        public static void MergeSort(int[] array, int leftIndex, int rightIndex)
+        private static void MergeSort(int[] array, int leftIndex, int rightIndex)
         {
             if (leftIndex < rightIndex)
             {
