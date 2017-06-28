@@ -7,8 +7,8 @@ namespace SortLogic
     /// </summary>
     public static class Sort
     {
-        private const String nullAarrayError = "The array cannot be null.";
-        private const String emptyArrayError = "The array cannot be empty.";
+        private const string nullAarrayError = "The array cannot be null.";
+        private const string emptyArrayError = "The array cannot be empty.";
 
         /// <summary>
         /// Checks the array for being null or empty. If so, throws exceptions.

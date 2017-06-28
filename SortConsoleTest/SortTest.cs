@@ -5,8 +5,8 @@ namespace SortConsoleTest
 {
     class TestSort
     {
-        private const String quickSortName = "Quick Sort";
-        private const String mergeSortName = "Merge Sort";
+        private const string quickSortName = "Quick Sort";
+        private const string mergeSortName = "Merge Sort";
         private const int errorIndicator = -1;
 
         static void Main(string[] args)
@@ -28,7 +28,7 @@ namespace SortConsoleTest
             Console.ReadLine();
         }
 
-        private static void PerformSort(int[] array, Action<int[]> method, String nameOfSort)
+        private static void PerformSort(int[] array, Action<int[]> method, string nameOfSort)
         {
             int[] arrayForSort = new int[array.Length];
             Array.Copy(array, arrayForSort, array.Length);
@@ -50,7 +50,7 @@ namespace SortConsoleTest
         private static int GetArraySizeFromConsole()
         {
             Console.Write("Input the array size: ");
-            String line = Console.ReadLine();
+            string line = Console.ReadLine();
             if (!int.TryParse(line, out int size) || size < 0)
             {
                 Console.WriteLine("Wrong size format.");
@@ -66,7 +66,7 @@ namespace SortConsoleTest
 
             for (int i = 0; i < size; i++)
             {
-                String str = Console.ReadLine();
+                string str = Console.ReadLine();
                 int value;
                 while (!int.TryParse(str, out value))
                 {
